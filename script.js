@@ -3,32 +3,41 @@ const hamBurger = document.querySelector(".toggle-btn");
 hamBurger.addEventListener("click", function () {
   document.querySelector("#sidebar").classList.toggle("expand");
 });
-document.addEventListener('DOMContentLoaded', function () {
-  // Selecciona todos los enlaces con la clase 'sidebar-link'
-  const links = document.querySelectorAll('.sidebar-link');
-  
-  // Selecciona el contenedor donde se mostrará el contenido
-  const content = document.getElementById('content');
-  
-  // Contenido de cada sección
-  const pages = {
-      'aula-virtual': '<h1>Aula Virtual FIM</h1><p>Contenido sobre el aula virtual...</p>',
-      'horario': '<h1>Mi Horario de Clases</h1><p>Tu horario aquí...</p>',
-      'docente': '<h1>Informacion Docente</h1><p>Información sobre los docentes...</p>',
-      // Agrega más secciones según necesites
-  };
-  
-  // Asigna un evento de clic a cada enlace
-  links.forEach(function (link) {
-      link.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = this.getAttribute('data-target');
-          if (pages[target]) {
-              // Cambia el contenido dinámicamente
-              content.innerHTML = pages[target];
-          } else {
-              content.innerHTML = '<h1>Página no encontrada</h1>';
-          }
-      });
-  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+    const content = document.getElementById('content');
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            const target = this.getAttribute('data-target');
+            switch(target) {
+                case 'aula-virtual':
+                    content.innerHTML = '<h1>Aula Virtual FIM</h1>';
+                    break;
+                case 'mi horario de clases':
+                    content.innerHTML = '<h1>Mi Horario de Clases</h1>';
+                    break;
+                case 'informacion docente':
+                    content.innerHTML = '<h1>Información Docente</h1>';
+                    break;
+                case 'mis cursos asignados':
+                    content.innerHTML = '<h1>Mis Cursos Asignados</h1>';
+                    break;
+                case 'tutoria alumnos':
+                     content.innerHTML = '<h1>Tutoria Alumnos</h1>';
+                        break;
+                case 'asistencia':
+                    content.innerHTML = '<h1>Asistencia</h1>';
+                            break;
+                case 'mis cursos asignados':
+                                content.innerHTML = '<h1>Mis Cursos Asignados</h1><p>Aquí puedes ver los cursos que tienes asignados...</p>';
+                                break;
+                default:
+                    content.innerHTML = '<h1>Bienvenido</h1><p>Selecciona una opción del menú.</p>';
+            }
+        });
+    });
 });
+

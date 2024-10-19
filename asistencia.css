@@ -1,0 +1,16 @@
+.btn-custom-green {
+    background-color: green;
+    color: white;
+}
+.text-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-button-wrapper p {
+    margin: 0 10px;
+}
+.btn-tomar-asistencia {
+    background-color: orange;
+    border-color: orange;
+}

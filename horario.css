@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    
+}
+th {
+    background-color: #f2f2f2;
+}
+button {
+    background-color: #f37171; 
+    margin-bottom: 30px;
+}
+h3{
+    font-weight: 400;
+}
+th:first-child {
+    width: 100px; /* Ancho de la columna "Hora" */
+}
+.image-button {
+    display: flex; /* Usar Flexbox para alinear la imagen y el texto */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border: none; /* Sin borde */
+    padding: 15px 25px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+}
+
+.button-icon {
+    width: 10px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+select {
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+option {
+    padding: 5px;
+    
+}

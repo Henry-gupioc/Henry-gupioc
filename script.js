@@ -41,3 +41,6 @@ hamBurger.addEventListener("click", function () {
     });
 });
 
+function loadContent(page) {
+    document.getElementById('content-frame').src = page;
+}

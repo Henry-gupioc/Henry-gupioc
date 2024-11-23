@@ -21,53 +21,51 @@
                 <img src="uni.png" style="width: 50px; display: block; margin: 0 auto;">
                 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
                         <i class="lni lni-briefcase-alt"></i>
                         <span>General</span>
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="aula-virtual">Aula Virtual FIM</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('aula-virtual.html')">Aula Virtual FIM</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="informacion docente">Informacion Docente</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('horario.html')">Mi Horario de Clases</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="horario.html" >Mi horario de Clases</a>
-                            
+                            <a href="#" class="sidebar-link" onclick="loadContent('informacion-docente.html')">Informacion Docente</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="mis cursos asignados">Mis cursos Asignados</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('mis-cursos-asignados.html')">Mis Cursos asignados</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="tutoria alumnos">Tutoria Alumnos</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('teoria-alumnos.html')">Teoria Alumnos</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="asistencia">Asistencia</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('asistencia.html')">Asistencia</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="mis-syllabus">Mis Syllabus</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('orge.html')">Cargar Notas ORGE</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="cargar notas dirce">Cargar Notas DIRCE</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('biblioteca.html')">Biblioteca Virtual</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="biblioteca virtual">Biblioteca Virtual</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('disponibilidad.html')">Mi Disponibilidad</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="mi disponibilidad">Mi Disponibilidad</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('reclamo.html')">Reclamo del reclamo</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="reclamo del reclamo docente">Reclamo del Reclamo docente</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('notas.html')">Correccion de Notas</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-target="ayuda en aula">Ayuda en Aula</a>
+                            <a href="#" class="sidebar-link" onclick="loadContent('ayuda.html')">Ayuda en aula</a>
                         </li>
                         <li class="sidebar-item">
-                           <a href="#" class="sidebar-link" data-target="aula virtual titulacion">Aula Virtual Titulacion</a>
-                        </li>                                                                 
-                        
+                            <a href="#" class="sidebar-link" onclick="loadContent('virtual.html')">Aula Virtual Titulacion</a>
+                        </li>
+
                     </ul>
                 </li>
                 <li class="sidebar-item">
@@ -122,11 +120,9 @@
                     <p href="#">Obregon Ramos, Maximo</p>
                 </div>
             </div>
+        
             <div id="container" class="text-center">
-                <h1>Horario de Clases</h1> <!-- Contenido inicial -->
-            
-                
-                
+                <iframe id="content-frame" width="100%" height="600px" frameborder="0"></iframe>
             </div>
         </div>
         

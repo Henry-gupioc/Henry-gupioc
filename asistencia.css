@@ -1,3 +1,9 @@
+body {
+    margin: 20px; /* Ajusta el tamaño del margen según prefieras */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que los márgenes se calculen correctamente */
+}
+
 .btn-custom-green {
     background-color: green;
     color: white;
@@ -13,4 +19,27 @@
 .btn-tomar-asistencia {
     background-color: orange;
     border-color: orange;
+}
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+}
+
+.table {
+    margin: 0;
+}
+
+.status-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.status-btn:hover {
+    background-color: #218838;
 }
